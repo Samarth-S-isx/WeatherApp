@@ -21,7 +21,7 @@ const useForcast=()=>{
         const queryString = new URLSearchParams(params).toString();
         const response = await fetch(URL+`current.json?${queryString}`)
         const result = await response.json()
-        console.log(result)
+        // console.log(result)
         if(result.error){
             setLoading(false)
             setError(result.error.message)
