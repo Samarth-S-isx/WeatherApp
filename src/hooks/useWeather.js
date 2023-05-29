@@ -2,7 +2,7 @@ import { useState } from "react"
 import moment from 'moment'
 
 const API_KEY = "87abe90f90754e49864161211232805"
-const URL = 'http://api.weatherapi.com/v1/'
+const URL = 'https://api.weatherapi.com/v1/'
 
 
 
