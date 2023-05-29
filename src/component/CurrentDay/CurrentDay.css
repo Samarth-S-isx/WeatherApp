@@ -1,0 +1,9 @@
+.card {
+    border-radius: var(--main-border-radius);
+}
+
+.cardInner {
+    height: 300px;
+}
+
+
