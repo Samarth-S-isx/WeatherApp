@@ -1,10 +1,10 @@
 import React from 'react'
 import CurrentDay from '../CurrentDay/CurrentDay';
 import DayDescription from '../DayDescription/DayDescription';
-import './Forcast.css'
+import './WeatherInfo.css'
 
-function Forecast({weather}) {
-  console.log(weather.currentDay,"hi")
+function WeatherInfo({weather}) {
+  // console.log(weather.currentDay,"hi")
   return (
     <>
     <div className='box container'>
@@ -21,5 +21,5 @@ function Forecast({weather}) {
   )
 }
 
-export default Forecast
+export default WeatherInfo
 

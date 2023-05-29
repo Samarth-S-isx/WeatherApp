@@ -1,13 +1,13 @@
 import React from 'react'
 import Form from '../Form/Form'
-import useForcast from '../../hooks/useForcast'
+import useWeather from '../../hooks/useWeather'
 import Loader from '../Loader/Loader'
-import Forcast from '../Forecast/Forcast'
+import WeatherInfo from '../WeatherInfo/WeatherInfo'
 import Error from '../Error/Error'
 import "./Page.css"
 
 function Page() {
-    const {weather,loading,getWeather,error} =  useForcast()
+    const {weather,loading,getWeather,error} =  useWeather()
 
     const getCity=(city)=>{
         // console.log(city)
@@ -28,7 +28,7 @@ function Page() {
         </>}
         {loading&&<Loader></Loader>}
         {/* {!forecast&&<Forcast forecast={forecast}></Forcast>} */}
-        {weather &&<Forcast weather={weather}></Forcast>}
+        {weather &&<WeatherInfo weather={weather}></WeatherInfo>}
     </>
   )
 }

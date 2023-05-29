@@ -6,7 +6,7 @@ const URL = 'http://api.weatherapi.com/v1/'
 
 
 
-const useForcast=()=>{
+const useWeather=()=>{
     const [loading, setLoading] = useState(false)
     const [error, setError] = useState("")
     const [weather, setWeather] = useState(null)
@@ -73,4 +73,4 @@ const useForcast=()=>{
         loading,weather,getWeather,error
     }
 }
-export default useForcast
+export default useWeather
